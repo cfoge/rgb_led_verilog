@@ -28,7 +28,7 @@ module blink_tb1(
     reg[3:0] flash_rate;
     wire led_out;
     
-    Blink uut (
+    blink uut (
     .clk(clk50),
     .led(led_out),
     .flash_rate(flash_rate)
