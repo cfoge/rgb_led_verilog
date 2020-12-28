@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log pwm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm.tcl
+EAStep vivado -log fade_up_down.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fade_up_down.tcl

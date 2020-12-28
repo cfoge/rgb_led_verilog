@@ -1,15 +1,14 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+//Engineer: RDJordan
 // 
-// Create Date: 26.12.2020 16:55:40
+// Create Date: 24.12.2020 13:47:50
 // Design Name: 
-// Module Name: pwm_tb
-// Project Name: 
-// Target Devices: 
+// Module Name: blink
+// Project Name: RGB_LED_SUITE
+// Target Devices: Arty A7 20
 // Tool Versions: 
-// Description: 
 // 
 // Dependencies: 
 // 
@@ -27,7 +26,7 @@ module pwm_tb(
     reg clk;
     reg rst;
     reg[7:0] PWM_in;
-    wire[7:0] cnt_out;
+
     wire PWM_out;
     
     
@@ -35,8 +34,8 @@ module pwm_tb(
     .clk(clk),
     .rst(rst),
     .PWM_in(PWM_in),
-    .PWM_out(PWM_out),
-    .cnt_out(cnt_out)
+    .PWM_out(PWM_out)
+  
     );
     
     integer i;

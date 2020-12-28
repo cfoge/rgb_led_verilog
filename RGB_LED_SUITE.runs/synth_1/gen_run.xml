@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1609123201">
-  <File Type="PA-TCL" Name="pwm.tcl"/>
-  <File Type="REPORTS-TCL" Name="pwm_reports.tcl"/>
-  <File Type="RDS-RDS" Name="pwm.vds"/>
-  <File Type="RDS-UTIL" Name="pwm_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="pwm_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="pwm.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1609133675">
+  <File Type="PA-TCL" Name="fade_up_down.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="fade_up_down_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="fade_up_down_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fade_up_down.vds"/>
+  <File Type="RDS-UTIL" Name="fade_up_down_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fade_up_down_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fade_up_down.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fade_up_down_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fade_up_down_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fade_up_down.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/pwm.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -25,7 +36,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="pwm"/>
+      <Option Name="TopModule" Val="fade_up_down"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -47,7 +58,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
