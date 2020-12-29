@@ -26,8 +26,9 @@ module led_control(
         input[3:0] fade_rate,
         input fade_mode,
         input rst,
-        output led_pwm
-
+        output led_pwm,
+        output[7:0] counter,
+        output blink_out
     );
     
     wire[7:0] fade_ud_count;
@@ -39,7 +40,7 @@ module led_control(
         .led(blink2fade_ud)
     ); 
     
-    fade_up_down fade_up_down(
+    fade_up_down fade_up_down( //as the clk is driven by the devicer, this crates an issue for the counter being reset
         .clk(blink2fade_ud),
         .rst(rst),
         .mode(fade_mode), //0 = fade up and down, 1 = fade up only
@@ -54,5 +55,6 @@ module led_control(
         .PWM_out(led_pwm)
     );
     
-    
+    assign counter = fade_ud_count;
+    assign blink_out = blink2fade_ud;
 endmodule
