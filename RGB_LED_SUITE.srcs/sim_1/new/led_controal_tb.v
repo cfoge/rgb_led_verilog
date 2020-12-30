@@ -53,23 +53,7 @@ module led_controal_tb(
          #100;
          clk = 1'b1;
          #100
-         clk = 1'b0;
-         #100;
-         clk = 1'b1;
-         #100
-         clk = 1'b0;
-         #100;
-         clk = 1'b1;
-         #100
-         clk = 1'b0;
-         #100;
-         clk = 1'b1;
-         #100
-         clk = 1'b0;
-         #100;
-         clk = 1'b1;
-         #100
-         
+        
          rst = 1;
          
          

@@ -33,9 +33,8 @@ module fade_up_down(
     reg cnt_direction;  // 0 to counter backward, 1 to count forward
     reg fade_done;
     
-    
-always @(posedge clk) begin
 
+always @(*) begin
     if (!rst)//set count and dir bits on reset
         begin
             cnt <= 8'b00000000;
@@ -43,7 +42,11 @@ always @(posedge clk) begin
             cnt_direction <= 1'b1;
             fade_done <= 1'b0;
         end
-    else
+    
+end
+    
+always @(posedge clk) begin
+
         begin
            
               if(cnt_enable) cnt <= cnt_direction ? cnt+1 : cnt-1;
