@@ -29,31 +29,36 @@ module fade_up_down(
     );
     
     reg [7:0] cnt = 0;  // 8bit counter, starts at 0
+    reg [7:0] cnt_mask;
     reg cnt_enable;  // 0 to disable the counter, 1 to enable it
-    reg cnt_direction;  // 0 to counter backward, 1 to count forward
+    wire cnt_direction;  // 0 to counter backward, 1 to count forward
+    reg cnt_direction_driver;
+    reg cnt_direction_mask;
     reg fade_done;
     
 
 always @(*) begin
     if (!rst)//set count and dir bits on reset
         begin
-            cnt <= 8'b00000000;
+            cnt_mask <= 8'b00000000;
             cnt_enable <= 1'b1;
-            cnt_direction <= 1'b1;
+            cnt_direction_mask <= 1'b1;
             fade_done <= 1'b0;
         end
-    
+    else begin
+            cnt_mask <= 8'b11111111;
+    end
 end
     
 always @(posedge clk) begin
 
-        begin
+       
            
               if(cnt_enable) cnt <= cnt_direction ? cnt+1 : cnt-1;
               if(cnt == 255) begin
                 if(!mode)
                     begin
-                    cnt_direction <= 1'b0;
+                    cnt_direction_driver <= 1'b0;
                     cnt <= cnt - 1;
                     end
                     
@@ -66,7 +71,7 @@ always @(posedge clk) begin
                     
               end
               if(cnt == 0) begin
-                 cnt_direction <= 1'b1;
+                 cnt_direction_driver <= 1'b1;
                  cnt <= cnt + 1;
                  fade_done <= 1'b0;
               end
@@ -74,12 +79,12 @@ always @(posedge clk) begin
         end
 
 
-    end
+    
        
       
     
-
+    assign cnt_direction = cnt_direction_mask & cnt_direction_driver;
     assign fade_done_out = fade_done;
-    assign out = cnt;  
+    assign out = cnt & cnt_mask;  
     
 endmodule
