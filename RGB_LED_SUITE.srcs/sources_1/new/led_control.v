@@ -25,7 +25,7 @@ module led_control(
         input clk,//should be a sub devided master clock 
         input enable,
         input[3:0] fade_rate,
-        input fade_or_direct_drive,
+        input fade_or_direct_drive,// 0 = fade, 1 = direct drivee
         input fade_mode,
         input rst,
         input [7:0] direct_drive,

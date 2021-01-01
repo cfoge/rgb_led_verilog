@@ -25,18 +25,24 @@ module led_controal_tb(
     );
     
         reg clk;//should be a sub devided master clock 
+        reg enable;
         reg[3:0] fade_rate;
+        reg fade_or_direct_drive;
         reg fade_mode;
         reg rst;
+        reg [7:0] direct_drive;
         wire led_pwm;
         wire[7:0] counter;
         wire blink_out;
     
     led_control uut(
         .clk(clk),//should be a sub devided master clock 
+        .enable(enable),
         .fade_rate(fade_rate),
+        .fade_or_direct_drive(fade_or_direct_drive),
         .fade_mode(fade_mode),
         .rst(rst),
+        .direct_drive(direct_drive),
         .led_pwm(led_pwm),
         .counter(counter),
         .blink_out(blink_out)
@@ -47,6 +53,9 @@ module led_controal_tb(
      initial begin
         $display("led_control.v test running");
          rst = 0;
+         direct_drive = 150;
+         fade_or_direct_drive = 0;
+         enable = 1;
          fade_rate = 1;
          fade_mode = 0;
          clk = 1'b0;
