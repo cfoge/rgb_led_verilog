@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.sim/sim_1/synth/func/xsim/blink_tb1_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_TEST
+INFO: [VRFC 10-311] analyzing module blink
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-311] analyzing module fade_up_down
+INFO: [VRFC 10-311] analyzing module led_control
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blink_tb1

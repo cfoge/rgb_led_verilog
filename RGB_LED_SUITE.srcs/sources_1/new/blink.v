@@ -22,15 +22,19 @@
 
 module blink(
     input clk,
-    input[3:0] flash_rate,
-    output led
+    input[7:0] flash_rate,
+    output led,
+    output fasterx2,
+    output fasterx4
     );
     
    
     
-    reg [3:0] count = 0;
+    reg [10:0] count = 0;
     
-    assign led = count[flash_rate];
+    assign led = count[flash_rate << 3];
+    assign fasterx2 = count[flash_rate << 2];
+    assign fasterx4 = count[flash_rate << 1];
     
     always @ (posedge(clk)) count <= count +1;
     

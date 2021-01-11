@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 11 15:34:23 2021
+# Process ID: 12724
+# Current directory: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4068 C:\Users\robdj\Documents\RMIT_2021\CAP_STONE\RGB_LED_SUITE\RGB_LED_SUITE.xpr
+# Log file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/vivado.log
+# Journal file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top blink [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top blink_tb1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source blink_tb1.tcl
+launch_simulation -mode post-synthesis -type functional
+close_sim
+launch_simulation
+source blink_tb1.tcl
+close_sim
+launch_simulation
+source blink_tb1.tcl
+close_sim
+launch_simulation
+source blink_tb1.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation
+source blink_tb1.tcl
+close_sim

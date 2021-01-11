@@ -1,0 +1,12 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5cb18ade3be148c0a9ced1efe15e6d9e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot blink_tb1_func_synth xil_defaultlib.blink_tb1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'flash_rate' on this module [C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'fasterx4' on this module [C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'fasterx2' on this module [C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'led' on this module [C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v:35]
+ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

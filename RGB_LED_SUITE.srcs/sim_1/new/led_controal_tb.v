@@ -56,8 +56,8 @@ module led_controal_tb(
          direct_drive = 150;
          fade_or_direct_drive = 0;
          enable = 1;
-         fade_rate = 1;
-         fade_mode = 0;
+         fade_rate = 3;
+         fade_mode = 1;
          clk = 1'b0;
          #100;
          clk = 1'b1;

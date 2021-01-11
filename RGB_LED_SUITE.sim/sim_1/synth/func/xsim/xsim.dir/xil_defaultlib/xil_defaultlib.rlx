@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.sim/sim_1/synth/func/xsim/blink_tb1_func_synth.v,1610340064,verilog,,C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v,,LED_TEST;blink;clk_div;fade_up_down;glbl;led_control;pwm,,,,,,,,
+C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/blink_tb1.v,1610340041,verilog,,,,blink_tb1,,,,,,,,

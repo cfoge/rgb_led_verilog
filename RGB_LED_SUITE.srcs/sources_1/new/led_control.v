@@ -24,17 +24,18 @@ module led_control(
 
         input clk,//should be a sub devided master clock 
         input enable,
-        input[3:0] fade_rate,
+        input[7:0] fade_rate,
         input fade_or_direct_drive,// 0 = fade, 1 = direct drivee
         input fade_mode,
         input rst,
         input [7:0] direct_drive,
         output led_pwm,
-        output[7:0] counter,
-        output blink_out
+        output[7:0] pwm_value,
+        output blink_out,
+        output blink_out2
     );
     
-    
+    wire enable_internal;
     wire[7:0] fade_ud_count;
     wire[7:0] fade_direct_drive_muxout;
     wire blink2fade_ud;
@@ -50,7 +51,9 @@ module led_control(
     blink fade_blink_rate (
         .clk(clk),
         .flash_rate(fade_rate),
-        .led(blink2fade_ud)
+        .led(blink2fade_ud),
+        .fasterx2(),
+        .fasterx4(enable_internal)
     ); 
     
     fade_up_down fade_up_down( //as the clk is driven by the devicer, this crates an issue for the counter being reset
@@ -68,7 +71,10 @@ module led_control(
         .PWM_out(pwm_out_driver)
     );
     
+    //assign led_pwm = pwm_out_driver & enable;
     assign led_pwm = pwm_out_driver & enable;
-    assign counter = fade_ud_count;
+    assign pwm_value = fade_direct_drive_muxout;
     assign blink_out = blink2fade_ud;
+     assign blink_out2 = enable_internal;
+    
 endmodule
