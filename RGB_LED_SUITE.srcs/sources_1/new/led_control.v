@@ -75,6 +75,6 @@ module led_control(
     assign led_pwm = pwm_out_driver & enable;
     assign pwm_value = fade_direct_drive_muxout;
     assign blink_out = blink2fade_ud;
-     assign blink_out2 = enable_internal;
+    assign blink_out2 = enable_internal;
     
 endmodule
