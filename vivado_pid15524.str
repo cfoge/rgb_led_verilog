@@ -1769,3 +1769,72 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LED_TES
 // Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A6FBEDA 
 // TclEventType: HW_TARGET_NEEDS_CLOSE
 // TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 327 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_control.v", 1); // m
+// Elapsed time: 41 seconds
+selectCodeEditor("led_control.v", 45, 286); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("led_control.v", 200, 157); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("led_control.v", 303, 140); // bP
+// Elapsed time: 47 seconds
+selectCodeEditor("led_control.v", 45, 58); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("led_control.v", 229, 64); // bP
+selectCodeEditor("led_control.v", 122, 70); // bP
+selectCodeEditor("led_control.v", 388, 42); // bP
+selectCodeEditor("led_control.v", 152, 274); // bP
+selectCodeEditor("led_control.v", 151, 274); // bP
+selectCodeEditor("led_control.v", 151, 274, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "led_control.v", 'c'); // bP
+selectCodeEditor("led_control.v", 194, 81); // bP
+selectCodeEditor("led_control.v", 194, 81, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "led_control.v", 'v'); // bP
+selectCodeEditor("led_control.v", 281, 51); // bP
+selectCodeEditor("led_control.v", 46, 142); // bP
+selectCodeEditor("led_control.v", 46, 142, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("led_control.v", 271, 79); // bP
+selectCodeEditor("led_control.v", 75, 136); // bP
+selectCodeEditor("led_control.v", 255, 183); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,633 MB. GUI used memory: 122 MB. Current time: 1/11/21, 5:52:57 PM AEDT
