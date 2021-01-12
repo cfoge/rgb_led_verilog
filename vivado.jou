@@ -142,3 +142,4 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property PROGRAM.FILE {C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/impl_1/LED_TEST.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
