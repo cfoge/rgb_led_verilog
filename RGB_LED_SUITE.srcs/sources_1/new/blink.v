@@ -30,10 +30,10 @@ module blink(
     
    
     
-    reg [11:0] count = 0;
+    reg [12:0] count = 0;
     
-    assign led = count[flash_rate << 4];
-    assign fasterx2 = count[flash_rate << 3];
+    assign led = count[flash_rate];
+    assign fasterx2 = count[flash_rate << 1];
     assign fasterx4 = count[flash_rate << 2];
     
     always @ (posedge(clk)) count <= count +1;

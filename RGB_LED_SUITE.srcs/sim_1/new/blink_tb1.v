@@ -43,7 +43,7 @@ module blink_tb1(
     
     initial begin
         $display("blink.v test running");
-        flash_rate = 1;
+        flash_rate = 3;
          for (i=0; i<=(2**(28))*2; i=i+1)//run for one full cycle of the output waveform
             begin
             clk50 = 1'b0;

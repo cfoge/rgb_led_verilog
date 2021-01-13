@@ -4,11 +4,11 @@ Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
 SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
 IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
 
-Process ID (PID): 21388
+Process ID (PID): 17296
 License: Customer
 Mode: GUI Mode
 
-Current time: 	Wed Jan 13 14:37:10 AEDT 2021
+Current time: 	Wed Jan 13 14:54:20 AEDT 2021
 Time zone: 	Australian Eastern Standard Time (Australia/Sydney)
 
 OS: Windows 10
@@ -47,7 +47,7 @@ Vivado layouts directory: C:/Users/robdj/AppData/Roaming/Xilinx/Vivado/2020.2/da
 PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
 Vivado log file location: 	C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/vivado.log
 Vivado journal file location: 	C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/vivado.jou
-Engine tmp dir: 	C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/.Xil/Vivado-21388-LAPTOP-2OPCD7I5
+Engine tmp dir: 	C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/.Xil/Vivado-17296-LAPTOP-2OPCD7I5
 
 Xilinx Environment Variables
 ----------------------------
@@ -61,9 +61,9 @@ XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
 XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
 
 
-GUI allocated memory:	128 MB
+GUI allocated memory:	185 MB
 GUI max memory:		3,072 MB
-Engine allocated memory: 1,016 MB
+Engine allocated memory: 1,023 MB
 
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
@@ -81,9 +81,6 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // TclEventType: FILESET_TARGET_UCF_CHANGE
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: FILE_SET_NEW
-// TclEventType: RUN_COMPLETED
-// TclEventType: RUN_STATUS_CHANGE
-// TclEventType: FILESET_TARGET_UCF_CHANGE
 // TclEventType: RUN_COMPLETED
 // TclEventType: RUN_STATUS_CHANGE
 // TclEventType: FILESET_TARGET_UCF_CHANGE
@@ -106,10 +103,9 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 117 MB (+120496kb) [00:00:14]
-// [Engine Memory]: 1,016 MB (+913660kb) [00:00:14]
-// WARNING: HEventQueue.dispatchEvent() is taking  5017 ms.
+// [GUI Memory]: 94 MB (+95837kb) [00:00:10]
+// [Engine Memory]: 1,023 MB (+920787kb) [00:00:10]
+// [GUI Memory]: 114 MB (+16459kb) [00:00:10]
+// [GUI Memory]: 122 MB (+2455kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3522 ms.
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
-// HMemoryUtils.trashcanNow. Engine heap size: 1,016 MB. GUI used memory: 60 MB. Current time: 1/13/21, 2:37:16 PM AEDT
-// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 1010.758 ; gain = 0.000 
-// Project name: RGB_LED_SUITE; location: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE; part: xc7z020clg400-1
