@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jan 13 16:19:49 2021
-# Process ID: 11896
+# Start of session at: Fri Jan 15 17:24:00 2021
+# Process ID: 18776
 # Current directory: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1
-# Command line: vivado.exe -log blink.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blink.tcl
-# Log file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1/blink.vds
+# Command line: vivado.exe -log LED_TEST.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_TEST.tcl
+# Log file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1/LED_TEST.vds
 # Journal file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source blink.tcl -notrace
+source LED_TEST.tcl -notrace

@@ -39,6 +39,8 @@ module led_control(
     wire[7:0] fade_ud_count;
     wire[7:0] fade_direct_drive_muxout;
     wire blink2fade_ud;
+    wire blink1;
+    wire blink2;
     wire pwm_out_driver; //output from the PWM module which is gated by the enable input
     
     mux2to1_8bit fade_direct_mux(
@@ -48,12 +50,13 @@ module led_control(
         .out(fade_direct_drive_muxout)
     );
     
+    
     blink fade_blink_rate (
         .clk(clk),
         .flash_rate(fade_rate),
         .led(blink2fade_ud),
-        .fasterx2(),
-        .fasterx4(enable_internal)
+        .fasterx2(blink1),
+        .fasterx4(blink2)
     ); 
     
     fade_up_down fade_up_down( //as the clk is driven by the devicer, this crates an issue for the counter being reset
@@ -74,7 +77,7 @@ module led_control(
     //assign led_pwm = pwm_out_driver & enable;
     assign led_pwm = pwm_out_driver & enable;
     assign pwm_value = fade_direct_drive_muxout;
-    assign blink_out = blink2fade_ud;
-    assign blink_out2 = enable_internal;
+    assign blink_out = blink1;
+    assign blink_out2 = blink2;
     
 endmodule
