@@ -24,8 +24,8 @@ module fade_up_down(
     input clk,
     input rst,
     input mode, //0 = fade up and down, 1 = fade up only
-    output [7:0] out,
-    output fade_done_out
+    output [7:0] out
+
     );
     
     reg [7:0] cnt = 0;  // 8bit counter, starts at 0
@@ -34,7 +34,6 @@ module fade_up_down(
     wire cnt_direction;  // 0 to counter backward, 1 to count forward
     reg cnt_direction_driver;
     reg cnt_direction_mask;
-    reg fade_done;
     
 
 always @(*) begin
@@ -43,7 +42,6 @@ always @(*) begin
             cnt_mask <= 8'b00000000;
             cnt_enable <= 1'b1;
             cnt_direction_mask <= 1'b1;
-            fade_done <= 1'b0;
         end
     else begin
             cnt_mask <= 8'b11111111;
@@ -66,14 +64,14 @@ always @(posedge clk) begin
                     begin
                     cnt <= 0;
                     end
-                fade_done <= 1'b1;
+             
                     
                     
               end
               if(cnt == 0) begin
                  cnt_direction_driver <= 1'b1;
                  cnt <= cnt + 1;
-                 fade_done <= 1'b0;
+          
               end
         
         end
@@ -84,7 +82,7 @@ always @(posedge clk) begin
       
     
     assign cnt_direction = cnt_direction_mask & cnt_direction_driver;
-    assign fade_done_out = fade_done;
+ 
     assign out = cnt & cnt_mask;  
     
 endmodule
