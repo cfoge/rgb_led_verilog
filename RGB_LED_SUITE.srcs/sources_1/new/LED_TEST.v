@@ -40,15 +40,11 @@ module LED_TEST(
     );
    
     led_control led_control(
-          .clk(clk_div_out),//should be a sub devided master clock 
-         
-         .fade_rate(7 - btn1 - btn2), // 5 is a good normal speed
-         .fade_or_direct_drive(btn0),// 0 = fade, 1 = direct drivee
+          .clk(clk_div_out),//should be a sub devided master clock        
+         .fade_rate(7 - btn1 - btn2), // 5 is a good normal speed       
          .fade_mode(sw2),
-         .rst(sw1),
-         .direct_drive(100),
-         .led_pwm(led0),//led out
-        
+         .rst(sw1),     
+         .led_pwm(led0),//led out  
          .blink_out(led1),
          .blink_out2(led2)
     );

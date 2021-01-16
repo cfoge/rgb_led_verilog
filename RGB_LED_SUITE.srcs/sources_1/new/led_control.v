@@ -21,34 +21,21 @@
 
 
 module led_control(
-
         input clk,//should be a sub devided master clock 
         input[7:0] fade_rate,
-        input fade_or_direct_drive,// 0 = fade, 1 = direct drivee
         input fade_mode,
-        input rst,
-        input [7:0] direct_drive,
-        output led_pwm,
-       
-        output blink_out,
-        output blink_out2
+        input rst,       
+        output led_pwm, //the PWM OUT
+        output blink_out, //the slow blink out
+        output blink_out2 // the fast blink out
     );
     
-    wire enable_internal;
+   
     wire[7:0] fade_ud_count;
-    wire[7:0] fade_direct_drive_muxout;
     wire blink2fade_ud;
     wire blink1;
     wire blink2;
     wire pwm_out_driver; //output from the PWM module which is gated by the enable input
-    
-    mux2to1_8bit fade_direct_mux(
-        .select(fade_or_direct_drive),
-        .in1(fade_ud_count),
-        .in2(direct_drive),
-        .out(fade_direct_drive_muxout)
-    );
-    
     
     blink fade_blink_rate (
         .clk(clk),
@@ -69,7 +56,7 @@ module led_control(
     pwm pwm_ch(
          .clk(clk),
          .rst(rst),
-        .PWM_in(fade_direct_drive_muxout),
+        .PWM_in(fade_ud_count),
         .PWM_out(pwm_out_driver)
     );
     

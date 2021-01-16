@@ -1,14 +1,14 @@
-
-*** Running vivado
-    with args -log led8_to1mux.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led8_to1mux.tcl
-
-
-
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jan 16 17:40:47 2021
+# Process ID: 15604
+# Current directory: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1
+# Command line: vivado.exe -log led8_to1mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led8_to1mux.tcl
+# Log file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1/led8_to1mux.vds
+# Journal file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source led8_to1mux.tcl -notrace
 Command: synth_design -top led8_to1mux -part xc7z020clg400-1
 Starting synth_design
