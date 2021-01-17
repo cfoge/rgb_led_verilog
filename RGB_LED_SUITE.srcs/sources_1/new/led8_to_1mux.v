@@ -5,7 +5,7 @@
 // 
 // Create Date: 16.01.2021 17:25:05
 // Design Name: 
-// Module Name: 8_to_1mux_led
+// Module Name: led8_to_1mux_led
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module led8_to1mux(
+module led8_to_1mux(
         input [2:0] Sel, //on, off, pwm, !pwm, blink slow, ! blinkslow, blink fast, !blink fast
         input pwm,
         input blink1,

@@ -27,12 +27,21 @@ module LED_TEST(
     input btn0,
     input btn1,
     input btn2,
+    input [2:0] led0_sel,
+    input [2:0] led1_sel,
+    input [2:0] led2_sel,
+    input [2:0] led3_sel,
     output led0,
     output led1,
-    output led2
+    output led2,
+    output led3
+    
     );
     
     wire clk_div_out; 
+    wire pwm_out;
+    wire blink_slow;
+    wire blink_fast;
     
     clk_div clk_div(
      .clk(sys_clk),
@@ -44,9 +53,43 @@ module LED_TEST(
          .fade_rate(7 - btn1 - btn2), // 5 is a good normal speed       
          .fade_mode(sw2),
          .rst(sw1),     
-         .led_pwm(led0),//led out  
-         .blink_out(led1),
-         .blink_out2(led2)
+         .led_pwm(pwm_out),//led out  
+         .blink_out(blink_fast),
+         .blink_out2(blink_slow)
     );
+    
+   led8_to_1mux led0mux(
+         .Sel(led0_sel), //on, off, pwm, !pwm, blink slow, ! blinkslow, blink fast, !blink fast
+         .pwm(pwm_out),
+         .blink1(blink_slow),
+         .blink2(blink_fast),
+         .Out(led0)
+   );
+       
+   led8_to_1mux led1mux(
+         .Sel(led1_sel), //on, off, pwm, !pwm, blink slow, ! blinkslow, blink fast, !blink fast
+         .pwm(pwm_out),
+         .blink1(blink_slow),
+         .blink2(blink_fast),
+         .Out(led1)
+   );
+       
+   led8_to_1mux led2mux(
+         .Sel(led2_sel), //on, off, pwm, !pwm, blink slow, ! blinkslow, blink fast, !blink fast
+         .pwm(pwm_out),
+         .blink1(blink_slow),
+         .blink2(blink_fast),
+         .Out(led2)
+   );
+       
+   led8_to_1mux led3mux(
+         .Sel(led3_sel), //on, off, pwm, !pwm, blink slow, ! blinkslow, blink fast, !blink fast
+         .pwm(pwm_out),
+         .blink1(blink_slow),
+         .blink2(blink_fast),
+         .Out(led3)
+   );
+    
+    
     
 endmodule

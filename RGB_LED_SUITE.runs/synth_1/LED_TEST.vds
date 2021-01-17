@@ -1,14 +1,14 @@
-
-*** Running vivado
-    with args -log LED_TEST.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_TEST.tcl
-
-
-
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan 17 14:24:38 2021
+# Process ID: 26172
+# Current directory: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1
+# Command line: vivado.exe -log LED_TEST.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_TEST.tcl
+# Log file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1/LED_TEST.vds
+# Journal file: C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source LED_TEST.tcl -notrace
 Command: synth_design -top LED_TEST -part xc7z020clg400-1
 Starting synth_design
