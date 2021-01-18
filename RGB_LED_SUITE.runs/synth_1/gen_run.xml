@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1610853874">
-  <File Type="PA-TCL" Name="LED_TEST.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="LED_TEST_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="LED_TEST_reports.tcl"/>
-  <File Type="RDS-RDS" Name="LED_TEST.vds"/>
-  <File Type="RDS-UTIL" Name="LED_TEST_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="LED_TEST_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="LED_TEST.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="LED_TEST_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="LED_TEST_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1610933407">
+  <File Type="PA-TCL" Name="led8_to_1mux.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="led8_to_1mux_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="led8_to_1mux_reports.tcl"/>
+  <File Type="RDS-RDS" Name="led8_to_1mux.vds"/>
+  <File Type="RDS-UTIL" Name="led8_to_1mux_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="led8_to_1mux_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="led8_to_1mux.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="led8_to_1mux_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="led8_to_1mux_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/blink.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/clk_div.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fade_up_down.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/led8_to_1mux.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -39,8 +18,33 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/blink.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_div.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fade_up_down.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/led_control.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -48,6 +52,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/pwm.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -55,6 +60,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/LED_TEST.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -70,7 +76,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="LED_TEST"/>
+      <Option Name="TopModule" Val="led8_to_1mux"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
