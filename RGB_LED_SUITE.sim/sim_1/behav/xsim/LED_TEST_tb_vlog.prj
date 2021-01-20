@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/LED_TEST.v" \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/blink.v" \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/clk_div.v" \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/fade_up_down.v" \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/led8_to_1mux.v" \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/led_control.v" \
+"../../../../RGB_LED_SUITE.srcs/sources_1/new/pwm.v" \
+"../../../../RGB_LED_SUITE.srcs/sim_1/new/LED_TEST_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

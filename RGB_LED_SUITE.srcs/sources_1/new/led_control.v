@@ -6,8 +6,8 @@
 // Create Date: 28.12.2020 20:43:53
 // Design Name: 
 // Module Name: led_control
-// Project Name: rgb_led_suite
-// Target Devices: 
+// Project Name: RGB_LED_SUITE
+// Target Devices: Arty A7 20
 // Tool Versions: 
 // Description: 
 // single channel led controller with fade and fade speed

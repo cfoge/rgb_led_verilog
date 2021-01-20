@@ -6,8 +6,8 @@
 // Create Date: 06.01.2021 16:57:18
 // Design Name: 
 // Module Name: LED_TEST
-// Project Name: 
-// Target Devices: 
+// Project Name: RGB_LED_SUITE
+// Target Devices: Arty A7 20
 // Tool Versions: 
 // Description: 
 // 

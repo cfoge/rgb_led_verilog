@@ -6,8 +6,8 @@
 // Create Date: 16.01.2021 17:25:05
 // Design Name: 
 // Module Name: led8_to_1mux_led
-// Project Name: 
-// Target Devices: 
+// Project Name: RGB_LED_SUITE
+// Target Devices: Arty A7 20
 // Tool Versions: 
 // Description: 
 // 

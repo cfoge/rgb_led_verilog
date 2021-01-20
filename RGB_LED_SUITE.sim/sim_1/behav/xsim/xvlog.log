@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/LED_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_TEST
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/blink.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blink
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/fade_up_down.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fade_up_down
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/led8_to_1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led8_to_1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/led_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sources_1/new/pwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/robdj/Documents/RMIT_2021/CAP_STONE/RGB_LED_SUITE/RGB_LED_SUITE.srcs/sim_1/new/LED_TEST_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_TEST_tb

@@ -6,8 +6,8 @@
 // Create Date: 28.12.2020 15:55:52
 // Design Name: 
 // Module Name: fade_up_down
-// Project Name: RGB_LED_suite
-// Target Devices: 
+// Project Name: RGB_LED_SUITE
+// Target Devices: Arty A7 20
 // Tool Versions: 
 // Description: 
 // a module for counting up/down to controal the fading of an LED. 8 bit output.

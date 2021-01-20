@@ -6,8 +6,8 @@
 // Create Date: 30.12.2020 15:38:31
 // Design Name: 
 // Module Name: mux2to1_8bit
-// Project Name: 
-// Target Devices: 
+// Project Name: RGB_LED_SUITE
+// Target Devices: Arty A7 20
 // Tool Versions: 
 // Description: 
 // An 8bit wide 2:1 mux to overide the up/down counter with a direct drive value
