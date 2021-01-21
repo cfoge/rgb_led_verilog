@@ -55,10 +55,10 @@ module LED_TEST_tb(
      initial begin
         $display("LED_TEST.v test running");
          sw2 = 0;
-         led0_sel = 2;  // 0 on,1 off,2 pwm,3 !pwm,4 blink slow,5 ! blinkslow,6 blink fast,7 !blink fast
-         led1_sel = 3;
-         led2_sel = 6;
-         led3_sel = 7;
+         led0_sel = 0;  // 0 on,1 off,2 pwm,3 !pwm,4 blink slow,5 ! blinkslow,6 blink fast,7 !blink fast
+         led1_sel = 1;
+         led2_sel = 2;
+         led3_sel = 3;
          sys_clk = 1'b0;
          #100;
          sys_clk = 1'b1;
@@ -69,7 +69,7 @@ module LED_TEST_tb(
          
          #100;
          
-          for (i=0; i<=(919900)*2; i=i+1)//run for one full cycle of the output waveform
+          for (i=0; i<=(999900)*2; i=i+1)//run for one full cycle of the output waveform
             begin
             sys_clk = 1'b0;
             #100;

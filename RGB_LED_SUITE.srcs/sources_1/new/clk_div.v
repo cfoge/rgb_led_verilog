@@ -29,7 +29,7 @@ module clk_div(
     
 reg [12:0] cnt = 0;
 always @(posedge clk) cnt <= cnt+1;
-assign clk_div = cnt[1]; //is 12 for the hardware
+assign clk_div = cnt[12]; //is 12 for the hardware
   
 endmodule
 
